@@ -86,4 +86,9 @@ struct _input {
     int (*stop)(int);
     int (*run)(int);
     int (*cmd)(int plugin, unsigned int control_id, unsigned int group, int value, char *value_str);
+
+    void *_userdata;
+    int _videosize;
+    int _videow, _videoh;
+    int _videofmt;
 };
